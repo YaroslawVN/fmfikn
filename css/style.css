@@ -164,6 +164,12 @@ h1, h2, h3, h4, h5,
     position: relative;
     z-index: 1; }
 
+@media (max-width: 767px) {
+    h2 {
+        font-size: 22px; /* Встановіть потрібний розмір шрифту для h2 на мобільних пристроях */
+    }
+}
+
 @media (max-width: 991.98px) {
   .img-md-fluid {
     max-width: 100%; } }
@@ -256,7 +262,7 @@ h1, h2, h3, h4, h5,
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid #f3f3f4 !important;}
   .site-navbar .site-navigation .site-menu {
-    margin-bottom: 0; }
+    margin-bottom: 0;}
     .site-navbar .site-navigation .site-menu .active > a {
       color: #51be78;
       display: inline-block;
