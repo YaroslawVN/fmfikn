@@ -1095,3 +1095,9 @@ h1, h2, h3, h4, h5,
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+@media (max-width: 767px) {
+    .site-logo img {
+        width: 70%; /* Встановіть ширину для логотипу в мобільній версії */
+    }
+}
