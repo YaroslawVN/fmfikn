@@ -299,17 +299,19 @@ jQuery(document).ready(function($) {
   var OnePageNavigation = function() {
     var navToggler = $('.site-menu-toggle');
    	$("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function(e) {
-      e.preventDefault();
+    // Якщо це посилання на якір (починається з #)
+    if (this.pathname === window.location.pathname && this.hash) {
+        e.preventDefault();
 
-      var hash = this.hash;
+        var hash = this.hash;
+        $('html, body').animate({
+            'scrollTop': $(hash).offset().top
+        }, 600, 'easeInOutCirc', function(){
+            window.location.hash = hash;
+        });
+    }
+});
 
-      $('html, body').animate({
-        'scrollTop': $(hash).offset().top
-      }, 600, 'easeInOutCirc', function(){
-        window.location.hash = hash;
-      });
-
-    });
   };
   OnePageNavigation();
 
