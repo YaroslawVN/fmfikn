@@ -597,6 +597,10 @@ h1, h2, h3, h4, h5,
 	background-repeat: no-repeat; /* Забороняє повторення зображення */
     background-position: center; /* Центрує зображення */
   }
+	.intro-section,
+  .intro-section .container .row {
+    height: 50vh; /* Зменшена висота для мобільних */
+    min-height: 400px; /* Мінімальна висота для мобільних */
 }
 
 .intro-section2 {
