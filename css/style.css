@@ -590,19 +590,6 @@ h1, h2, h3, h4, h5,
     background-position: center;
     background-repeat: no-repeat; }
 
-@media (max-width: 768px) {
-  .intro-section {
-    height: 300px; /* Зменшення висоти для мобільних */
-    background-size: contain; /* Зберігає пропорції без обрізання */
-	background-repeat: no-repeat; /* Забороняє повторення зображення */
-    background-position: center; /* Центрує зображення */
-  }
-	.intro-section,
-  .intro-section .container .row {
-    height: 50vh; /* Зменшена висота для мобільних */
-    min-height: 400px; /* Мінімальна висота для мобільних */
-}
-
 .intro-section2 {
   background-size: contain;
   position: relative; }
@@ -798,25 +785,6 @@ h1, h2, h3, h4, h5,
   margin: 0 auto;
 	overflow: hidden;
 }
-
-@media (max-width: 768px) {
-  .hero-slide {
-    width: 100%; /* Змінює ширину каруселі на 100% для мобільних */
-    height: auto; /* Дозволяє висоті підлаштовуватися під контент */
-  }
-
-  .intro-section {
-    height: 250px; /* Зменшена висота для мобільних */
-    background-size: contain; /* Зберігає пропорції без обрізання */
-    background-position: center; /* Центрує зображення */
-  }
-
-	.intro-section h1 {
-    font-size: 0.8rem; /* Зменшений розмір шрифта для мобільних */
-  }
-}
-
-
   .hero-slide .owl-nav .owl-prev,
   .hero-slide .owl-nav .owl-next {
     position: absolute;
