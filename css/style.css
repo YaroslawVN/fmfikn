@@ -594,6 +594,8 @@ h1, h2, h3, h4, h5,
   .intro-section {
     height: 300px; /* Зменшення висоти для мобільних */
     background-size: contain; /* Зберігає пропорції без обрізання */
+	background-repeat: no-repeat; /* Забороняє повторення зображення */
+    background-position: center; /* Центрує зображення */
   }
 }
 
