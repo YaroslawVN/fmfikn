@@ -806,6 +806,10 @@ h1, h2, h3, h4, h5,
     background-size: contain; /* Зберігає пропорції без обрізання */
     background-position: center; /* Центрує зображення */
   }
+
+	.intro-section h1 {
+    font-size: 1.5rem; /* Зменшений розмір шрифта для мобільних */
+  }
 }
 
 
