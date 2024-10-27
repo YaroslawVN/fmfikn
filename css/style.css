@@ -794,6 +794,21 @@ h1, h2, h3, h4, h5,
   margin: 0 auto;
 	overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .hero-slide {
+    width: 100%; /* Змінює ширину каруселі на 100% для мобільних */
+    height: auto; /* Дозволяє висоті підлаштовуватися під контент */
+  }
+
+  .intro-section {
+    height: 250px; /* Зменшена висота для мобільних */
+    background-size: contain; /* Зберігає пропорції без обрізання */
+    background-position: center; /* Центрує зображення */
+  }
+}
+
+
   .hero-slide .owl-nav .owl-prev,
   .hero-slide .owl-nav .owl-next {
     position: absolute;
